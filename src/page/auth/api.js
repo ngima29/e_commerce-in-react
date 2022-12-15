@@ -70,3 +70,20 @@ export const signout=next=>{
         .catch(err=>console.log(err))
     }
 }
+
+// forgate password
+
+export const forgetPassword=user=>{
+    return fetch(`${API}/forgetpassword`,{
+        method:"POST",
+        headers:{
+            Accept:"application/json",
+            "content-Type":"application/json"
+        },
+        body:JSON.stringify(user)
+    })
+    .then(res=>{
+        return res.json()
+    })
+    .catch(err=>console.log(err))
+    }

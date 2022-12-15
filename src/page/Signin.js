@@ -85,7 +85,7 @@ const Signin =()=> {
                         <button className="btn btn-primary form-control" onClick={handleSubmit}>Signin</button>
                     </div>
                     <div className="col-4 offset-md-8">
-                       <a href="forgetpassword.html" className="text-decoration-none text-secondary">Forget Password?</a>
+                       <Link to="/forgate/password" className="text-decoration-none text-secondary">Forget Password?</Link>
                     </div>
 
                 </form>

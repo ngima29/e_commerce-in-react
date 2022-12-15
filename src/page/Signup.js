@@ -39,7 +39,7 @@ function Signup() {
        </div> 
       )
         // to show success
-    const shoeSuccess=()=>(
+    const showSuccess=()=>(
         
         <div className='alert alert-success' style={{ display:success?" ":'none' }}>
         <span>user registration successful, verify your email before login</span>
@@ -54,7 +54,7 @@ function Signup() {
             <div className="col-md-7 mt-4 mb-3 p-3 shadow-lg">
                 <form>
                     {showError()}
-                    {shoeSuccess()}
+                    {showSuccess()}
                     <div className="col-12 mb-3">
                         <label htmlFor="fname">Full Name</label>
                         <input type="text" name="fname" id="fname" placeholder="full Name" className="form-control" onChange={handleChange('name')} value={name} />
